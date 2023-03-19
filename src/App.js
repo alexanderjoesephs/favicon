@@ -16,7 +16,7 @@ useEffect(  () => {
       setQuery((prevQuery)=> prevQuery + ".com" )
     }
     
-    fetch(`http://favicongrabber.com/api/grab/${query}`)
+    fetch(`https://favicongrabber.com/api/grab/${query}`)
     .then(response => response.json())
     .then(responseData => {
       if(activeFetch){
